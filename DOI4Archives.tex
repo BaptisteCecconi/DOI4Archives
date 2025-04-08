@@ -131,15 +131,23 @@ This network of resources builds a so-called scholarly knowledge graph
 \citep{} or scientific knowledge graph \citep{}.
 
 %The DOI is in the article publication process which generate DOI for each publication and links references to other sources. It allows to link Data with articles and draw the basis for an interconnected architecture that allows to trace the usage and origin of Data published.
-DOIs are widely used for data, and although their metadata is slightly different from articles, they work very well together.
-
-
+%DOIs are widely used for data, and although their metadata is slightly different from articles, they work very well together.
+There are several DOI providers. CrossRef\footnote{\url{https://www.crossref.org}}
+is the main DOI provider for scholarly communications. 
+DataCite\footnote{\url{https://datacite.org}} is the main provider
+for DOI data publication. Each DOI provider has a specific metadata
+schema, extending DublinCore, designed to support the scope of the 
+DOI they provide.
 
 %The DOI success is a consequence of an architecture that includes URL resolution (since each DOI is attached to a landing page) and standardized metadata that provides exploitable information. As a unique and standard identifier it allows to make the bridge between different networks which complete each others (more details in \ref{sec:bestpractice:providing})
 %For instance, the registry of the Virtual Observatory is dedicated to link resource with services using the IVOID\footnote{\url{https://www.ivoa.net/documents/IVOAIdentifiers/}} identifier but is role is not adapted for citation.\note{redundancy with 4.1.1}
 
-Data Centers motivated for citation and interconnection, must curate relevant metadata. 
-In this document, we will develop good practices to provide well citation, interconnections with related resources, including IVOA resources.
+%Data Centers motivated for citation and interconnection, must curate relevant metadata. 
+Data centers publishing data using DOIs should carefully inform and 
+curate the metadata registered in the DOI metadata records.  
+
+In this document, we propose good practices to provide efficient citation, 
+interconnections with related resources, including IVOA resources.
 
 
 \subsection{Use case}
