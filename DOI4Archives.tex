@@ -154,7 +154,7 @@ interconnections with related resources, including IVOA resources.
 \textbf{\color{red}New section (must be checked)}
 
 \begin{enumerate}
-	\item \textbf{Citation and Impact} Data producers (authors) and Data Centers 
+	\item \textbf{Citation} Data producers (authors) and Data Centers 
 	(providers) expect that the datasets or collections they are publishing are 
  	cited in scholarly communication (journal articles, proceedings, posters...) 
   	so that their contribution to the field is acknowledged and attributed. Most 
@@ -168,23 +168,30 @@ interconnections with related resources, including IVOA resources.
  %redo (Edwin)
 	\hl{Users also expect the Data Center website to provide a way to cite the resource.}
  	This includes a recommended citation string, but should also provide the 
-  	citation metadata in machien actionable formats (such as BibTex). This also 
+  	citation metadata in machine actionable formats (such as BibTex). This also 
    	requires coordination with the scholarly journal publishers, so that a common
 	BibTex macro is adopted for datasets.
 	
-	\item The Data consumer expects to get information about origin and rights. For access rights, existing license must be visible but also readable by software.
+	\item \textbf{Licenses} The Data consumer expects to get information about 
+ 	origin and rights. For access rights, existing license must be visible but 
+  	also readable by software. SPDX licence URIs should be used, as recommended 
+   	by Datacite\footnote{\url{https://datacite-metadata-schema.readthedocs.io/en/4.5/properties/rights/}}
 	
-	\item Data published are disseminated in networks like the VO registry, DatasetSearch or the EOSC EU node (see \ref{sec:bestpractice:providing}). The users as well as the Data Center expect that the entries are consistent.
+	\item \textbf{Findability} Data published are disseminated in networks like the VO registry, 
+ 	DatasetSearch or the EOSC EU node (see \ref{sec:bestpractice:providing}). 
+  	The users as well as the Data Center expect that the entries are consistent.
 	
-	\item The Data Center as well as authors needs reports about the usage activity of their work. They query dedicated services (eg: OpenCitation) that make reports and are capable to graph the citation of a specific resource.
+	\item \textbf{Impact} The Data Center as well as authors needs reports about the usage activity of their work. They query dedicated services (eg: OpenCitation) that make reports and are capable to graph the citation of a specific resource.
 	
-	\item 
+	\item \textbf{Reproducibility} 
 	%A Workflow needs to execute again a process that includes external resources. 
 	\hl{A user expects sustainable access to a resource that he cited in an article or that he used in an experience.}
 	It expects that the experience is reproducible. If it uses a service or Knowledgebase, it expects that the protocols stay compatible with the original implementation. For Dataset, it could expect that data have not been altered. 
 	
 	
 	%%reproducibility (not possible with evolving dataset, eneous with service,hors-contexte pour KD)
+ 	% I do not agree: there are various type of "evolving" datasets... if the DOI remains the same, it should mean that the past data is unchanged. 
+  
 \end{enumerate}
 
 \subsection{Example of existing DOI}
