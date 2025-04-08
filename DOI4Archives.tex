@@ -90,9 +90,45 @@ We choose relevant examples from existing DOI taken in approximatively 75000 dat
 %The DOI usage is confirmed in Open Science, it opens the door to a large audience by improving citation and traceability of data. 
 %DOIs are part of the scientific article publication process. A good DOI curation provides standard metadata that can be harvested and reused to generate citation with any information required for a BibTeX. It mays also include references and related products that build step by step a graph of linked resources.
 
-DOIs are part of the scientific article publication process. The DOI is a sustainable identifier applied to a web resource that emerges today among other identifiers such  as the ORCID\footnote{\url{https://orcid.org/}}, for authors, the RoR\footnote{\url{https://ror.org/}} for organization or the RAID\footnote{\url{https://raid.org/}} for projects.
+DOIs are persistent identifiers with two different roles:
+\begin{itemize}
+\item (i) It is pesistent handle to a resource. It provides a link to
+a resource, which is maintained and guaranted. There are DOIs used for 
+scholarly journal articles, for datasets and software, but also for 
+grants (see, e.g., \url{https://doi.org/10.3030/824064}, which is 
+linking to the ESCAPE project page on the CORDIS web site of European 
+Commission), for instruments (see, e.g., the recent Datacite 
+implementation of the RDA PID for instrument recommendation), or for 
+repositories (see, e.g., \url{http://doi.org/10.17616/R31NJMS9}, 
+which is linking to the PADC record in the Re3data registry), or to 
+FAIR concepts and ressources, such as done by FAIRsharing.org. It is 
+thus not always used for scholarly citations, but also as persistent 
+identifers in knowledge graphs.
+\item (ii) It is a handle to persistent resources. The referred 
+resource should not change. This is a trustworthyness issue: using a 
+DOI on a resource implies that the referenced content is not changing. 
+Some datacentres are publishing ``living'' datasets, with a 
+non-varying DOI, but only in case addition to the datasets doesn't 
+change the previously available content (e.g., just adding new files 
+as routine observations are gathered).
+\end{itemize}
 
-As it is unique, it enables a resource to be reliably identified, regardless of the professional network in which it is published. It improves traceability and citation with standard metadata that can be harvested and reused. For instance, BibTeX can be extracted from DOI. The DOI information may also includes references and related products that build up a graph of linked resources step by step.
+DOIs are part of the scholarly and data publication process. The DOI 
+is a persitent identifier applied to a web resource that emerges 
+today among other identifiers such as the ORCID\footnote{\url{https://orcid.org/}}, 
+for authors, the RoR\footnote{\url{https://ror.org/}} for organization 
+or the RAID\footnote{\url{https://raid.org/}} for projects.
+
+%As it is unique,...  
+% ==> DOIs are not unique, there can be several DOIs for an object.  
+It enables a resource to be reliably identified, regardless of the 
+professional network, in which it is published. It improves traceability 
+and citation with standard metadata that can be harvested and reused. 
+%For instance, BibTeX can be extracted from DOI. 
+% ==> this a service provide by Datacite and others. Coordination needed anyway
+The DOI metadata can also includes references and related products.  
+This network of resources builds a so-called scholarly knowledge graph
+\citep{} or scientific knowledge graph \citep{}.
 
 %The DOI is in the article publication process which generate DOI for each publication and links references to other sources. It allows to link Data with articles and draw the basis for an interconnected architecture that allows to trace the usage and origin of Data published.
 DOIs are widely used for data, and although their metadata is slightly different from articles, they work very well together.
